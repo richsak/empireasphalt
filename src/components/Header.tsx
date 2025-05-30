@@ -108,7 +108,7 @@ const Header = () => {
     <header className="bg-primary text-white px-4 py-6 sticky top-0 z-50 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2" legacyBehavior>
+        <Link href="/" className="flex items-center space-x-2">
           <Image src="/empireLogo.svg" alt="Empire Asphalt Paving Logo" width={50} height={50} />
           <div>
             <h1 className="text-xl font-bold">Empire Asphalt Paving</h1>
@@ -120,7 +120,7 @@ const Header = () => {
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
             <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
+              <Link href="/" passHref>
                 <NavigationMenuLink className={navLinkStyle}>
                   Home
                 </NavigationMenuLink>
@@ -179,21 +179,21 @@ const Header = () => {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <Link href="/about" legacyBehavior passHref>
+              <Link href="/about" passHref>
                 <NavigationMenuLink className={navLinkStyle}>
                   About
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/portfolio" legacyBehavior passHref>
+              <Link href="/portfolio" passHref>
                 <NavigationMenuLink className={navLinkStyle}>
                   Portfolio
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/contact" legacyBehavior passHref>
+              <Link href="/contact" passHref>
                 <NavigationMenuLink className={navLinkStyle}>
                   Contact
                 </NavigationMenuLink>
@@ -241,7 +241,7 @@ const Header = () => {
                     <Link
                       href={item.href}
                       className="text-sm hover:text-yellow-400 py-1 pl-4 text-slate-300"
-                      legacyBehavior>{item.title}</Link>
+>{item.title}</Link>
                   </SheetClose>
                 ))}
 
@@ -253,7 +253,7 @@ const Header = () => {
                     <Link
                       href={item.href}
                       className="text-sm hover:text-yellow-400 py-1 pl-4 text-slate-300"
-                      legacyBehavior>{item.title}</Link>
+>{item.title}</Link>
                   </SheetClose>
                 ))}
 
@@ -265,7 +265,7 @@ const Header = () => {
                     <Link
                       href={item.href}
                       className="text-sm hover:text-yellow-400 py-1 pl-4 text-slate-300"
-                      legacyBehavior>{item.title}</Link>
+>{item.title}</Link>
                   </SheetClose>
                 ))}
 
