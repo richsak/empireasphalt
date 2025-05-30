@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Company Info */}
         <div className="space-y-4">
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2" legacyBehavior>
             <Image src="/empireLogo.svg" alt="Empire Asphalt Paving Logo" width={40} height={40} />
             <div>
               <h3 className="text-lg font-semibold text-white">Empire Asphalt Paving</h3>
@@ -82,7 +82,6 @@ const Footer = () => {
           </Button>
         </div>
       </div>
-
       {/* Copyright */}
       <div className="mt-12 border-t border-slate-700 pt-8 text-center text-sm">
         <p>&copy; {new Date().getFullYear()} Empire Asphalt Paving. All rights reserved. | Licensed & Insured</p>

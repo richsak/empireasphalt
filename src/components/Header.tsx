@@ -108,7 +108,7 @@ const Header = () => {
     <header className="bg-primary text-white px-4 py-6 sticky top-0 z-50 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-2" legacyBehavior>
           <Image src="/empireLogo.svg" alt="Empire Asphalt Paving Logo" width={50} height={50} />
           <div>
             <h1 className="text-xl font-bold">Empire Asphalt Paving</h1>
@@ -238,7 +238,10 @@ const Header = () => {
                  {/* Example: Simple links for services in mobile */}
                 {servicesItems.map(item => (
                   <SheetClose asChild key={`mob-${item.href}`}>
-                    <Link href={item.href} className="text-sm hover:text-yellow-400 py-1 pl-4 text-slate-300">{item.title}</Link>
+                    <Link
+                      href={item.href}
+                      className="text-sm hover:text-yellow-400 py-1 pl-4 text-slate-300"
+                      legacyBehavior>{item.title}</Link>
                   </SheetClose>
                 ))}
 
@@ -247,7 +250,10 @@ const Header = () => {
                 </SheetClose>
                 {serviceAreasItems.map(item => (
                   <SheetClose asChild key={`mob-${item.href}`}>
-                    <Link href={item.href} className="text-sm hover:text-yellow-400 py-1 pl-4 text-slate-300">{item.title}</Link>
+                    <Link
+                      href={item.href}
+                      className="text-sm hover:text-yellow-400 py-1 pl-4 text-slate-300"
+                      legacyBehavior>{item.title}</Link>
                   </SheetClose>
                 ))}
 
@@ -256,7 +262,10 @@ const Header = () => {
                 </SheetClose>
                  {industriesItems.map(item => (
                   <SheetClose asChild key={`mob-${item.href}`}>
-                    <Link href={item.href} className="text-sm hover:text-yellow-400 py-1 pl-4 text-slate-300">{item.title}</Link>
+                    <Link
+                      href={item.href}
+                      className="text-sm hover:text-yellow-400 py-1 pl-4 text-slate-300"
+                      legacyBehavior>{item.title}</Link>
                   </SheetClose>
                 ))}
 

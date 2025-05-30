@@ -113,7 +113,7 @@ const ServicesSection = () => {
                   </h3>
                   {/* Learn More button is already at the bottom due to justify-end and its own container */}
                   <div>
-                    <Link href={service.learnMoreLink} passHref>
+                    <Link href={service.learnMoreLink} passHref legacyBehavior>
                       <Button
                         variant="link"
                         className="text-yellow-400 hover:text-yellow-300 font-semibold text-sm sm:text-base"
@@ -153,7 +153,7 @@ const ServicesSection = () => {
         </div>
 
         <div className="text-center mt-12 md:mt-16">
-          <Link href="/services" passHref>
+          <Link href="/services" passHref legacyBehavior>
             <Button
               size="lg"
               className="bg-primary hover:bg-yellow-400 hover:text-[#151515] text-white font-semibold px-8 py-3 text-base"
