@@ -1,0 +1,7 @@
+- You need to replicate the design attached.
+- Font to use Rubik
+- Assets to use for replication are included in the public folder with the following names:
+    - Hero background image : homeHero.webp
+    - Empire Logo : empireLogo.svg
+- Use ShadCN when applicable (not yet installed)
+- Also install react-hook-form + zod, and Framer Motion
